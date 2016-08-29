@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:id="@+id/web_button_go"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/web_editText_url"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/web_button_go"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp" />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_webView"
+        android:layout_above="@+id/web_button_go"
+        android:layout_margin="10dp" />
+</RelativeLayout>
